@@ -5,8 +5,8 @@ export const videos: Video[] = [
         id: 1,
         videoUrl:
             "https://www.w3schools.com/html/mov_bbb.mp4",
-        authorName: "Nguyen Van A",
-        description: "Video demo 1",
+        authorName: "Vũ Đình Sơn",
+        description: "Video demo 1, có một con heo :)))) dòng chữ này để test độ dài, dòng chữ này để test độ dàidòng chữ này để test độ dàidòng chữ này để test độ dàidòng chữ này để test độ dài",
         likesCount: 100,
     },
     {
@@ -25,4 +25,5 @@ export const videos: Video[] = [
         description: "Video demo 3",
         likesCount: 300,
     },
+
 ];
