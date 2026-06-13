@@ -37,7 +37,7 @@ const Navbar = () => {
             </div>
             <div className="fixed top-0 left-0 bottom-0 w-20 z-50 bg-black/40 backdrop-blur-xl border-r border-white/5 flex flex-col items-center justify-between py-8 hidden md:flex shadow-2xl">
                 <div className="w-12 h-12 bg-gradient-to-tr from-red-600 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg shadow-red-500/30 cursor-pointer hover:rotate-6 transition-transform duration-300">
-                    <span className="text-white font-black text-xl">V</span>
+                    <span className="text-white font-black text-xl">S</span>
                 </div>
                 <ul className="flex flex-col items-center gap-6 w-full px-2">
                     {navItems.map((item) => {

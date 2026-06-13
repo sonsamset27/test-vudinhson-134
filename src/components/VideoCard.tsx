@@ -21,7 +21,7 @@ const VideoCard = ({ video }: VideoCardProps) => {
     };
     return (
         <div className="flex justify-center bg-black">
-            <div className="grid grid-cols-1 h-screen snap-start relative md:h-[100vh] md:aspect-[9/16]">
+            <div className="grid grid-cols-1 h-screen snap-start relative overflow-hidden md:h-[100vh] md:aspect-[9/16]">
                 <video
                     className="w-full h-full object-contain z-0"
                     src={video.videoUrl}
