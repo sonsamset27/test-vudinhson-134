@@ -12,7 +12,7 @@ interface VideoCardProps {
 
 const VideoCard = ({ video }: VideoCardProps) => {
     const { liked, handleLike, likeCount } = useLikeAction(video);
-    const { videoRef, isPlaying, togglePlay } = useVideoPlayer();
+    const { videoRef, togglePlay } = useVideoPlayer();
     const [expanded, setExpanded] = useState(false);
     const formatCount = (count: number) => {
         if (count < 1000) return count;

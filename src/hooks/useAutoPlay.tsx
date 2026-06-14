@@ -3,8 +3,6 @@ import { useEffect, useRef, useState } from "react";
 
 export const useVideoPlayer = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
-    const [isPlaying, setIsPlaying] = useState(false);
-
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
@@ -13,10 +11,8 @@ export const useVideoPlayer = () => {
                 try {
                     if (entry.isIntersecting) {
                         await video.play();
-                        setIsPlaying(true);
                     } else {
                         video.pause();
-                        setIsPlaying(false);
                     }
                 } catch (err) {
                     console.error(err);
@@ -32,18 +28,14 @@ export const useVideoPlayer = () => {
     const togglePlay = async () => {
         const video = videoRef.current;
         if (!video) return;
-
         if (video.paused) {
             await video.play();
-            setIsPlaying(true);
         } else {
             video.pause();
-            setIsPlaying(false);
         }
     };
     return {
         videoRef,
-        isPlaying,
         togglePlay,
     };
 };
