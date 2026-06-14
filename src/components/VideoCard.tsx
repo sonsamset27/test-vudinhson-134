@@ -29,7 +29,7 @@ const VideoCard = ({ video }: VideoCardProps) => {
                     onClick={togglePlay}
                     loop
                 />
-                <div className="absolute bottom-12 left-5 z-10 flex flex-col gap-2 md:bottom-5">
+                <div className="absolute bottom-14 left-5 z-10 flex flex-col gap-2 md:bottom-5">
                     <p className="text-gray-200 font-bold text-2xl">
                         {video.authorName}
                     </p>
