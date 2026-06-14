@@ -45,7 +45,7 @@ Trong custom hook có 2 state
 - togglePlay: hàm dùng để play/pause video sẽ được gọi khi click vào video, logic là khi video đang pause thì play(), ngược lại thì pause()
 
 Luồng hoạt động
-- 'const videoRef = useRef<HTMLVideoElement>(null);' cái này giúp ta có thể gọi các hàm của video element như play(), pause(),..
+- "const videoRef = useRef<HTMLVideoElement>(null);" cái này giúp ta có thể gọi các hàm của video element như play(), pause(),..
 - Sau đó gọi useEffect để khởi tạo IntersectionObserver
 IntersectionObserver sẽ theo dõi video element khi nó lọt vào viewport bằng entry.isIntersecting và kiểm tra nếu video lọt vào viewport thì gọi video.play(), ngược lại thì video.pause()
 - Ở đây em để threshold là 0.7 có nghĩa là khi video lọt vào viewport 70% thì sẽ play, ngược lại nếu video lọt ra khỏi viewport 30% thì sẽ pause
