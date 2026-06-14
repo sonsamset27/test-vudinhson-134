@@ -20,8 +20,8 @@ const VideoCard = ({ video }: VideoCardProps) => {
         return `${(count / 1000000).toFixed(1)}M`;
     };
     return (
-        <div className="flex justify-center bg-black">
-            <div className="grid grid-cols-1 h-screen snap-start relative overflow-hidden md:h-[100vh] md:aspect-[9/16]">
+        <div className="flex justify-center h-full bg-black">
+            <div className="grid grid-cols-1 h-[88vh] snap-start relative overflow-hidden md:h-[100vh] md:aspect-[9/16]">
                 <video
                     className="w-full h-full object-contain z-0"
                     src={video.videoUrl}
@@ -29,7 +29,7 @@ const VideoCard = ({ video }: VideoCardProps) => {
                     onClick={togglePlay}
                     loop
                 />
-                <div className="absolute bottom-20 left-5 z-10 flex flex-col gap-2 md:bottom-5">
+                <div className="absolute bottom-5 left-5 z-10 flex flex-col gap-2 md:bottom-5">
                     <p className="text-gray-200 font-bold text-2xl">
                         {video.authorName}
                     </p>
