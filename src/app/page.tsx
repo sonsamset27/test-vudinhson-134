@@ -3,7 +3,7 @@ import Navbar from "@/components/NavBar";
 
 const Page = () => {
   return (
-    <div>
+    <div className="min-h-screen  bg-black">
       <VideoFeed />
       <Navbar />
     </div>

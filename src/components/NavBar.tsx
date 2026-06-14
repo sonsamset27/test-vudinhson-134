@@ -11,8 +11,8 @@ const Navbar = () => {
     ];
     return (
         <>
-            <div className="fixed bottom-4 left-4 right-4 z-50 bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl md:hidden">
-                <ul className="flex items-center justify-around h-16 px-2">
+            <div className="fixed bottom-2 left-0 right-0 z-50 bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl md:hidden">
+                <ul className="flex items-center justify-around h-[10vh] px-2">
                     {navItems.map((item) => {
                         const Icon = item.icon;
                         const isActive = activeTab === item.id;
