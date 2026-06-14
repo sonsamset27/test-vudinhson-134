@@ -34,8 +34,7 @@ const VideoCard = ({ video }: VideoCardProps) => {
                         {video.authorName}
                     </p>
                     <p
-                        className={`text-gray-200 font-light text-sm max-w-[90vw] ${expanded ? "" : "line-clamp-2"
-                            }`}
+                        className={`text-gray-200 font-light text-sm max-w-[90vw] ${expanded ? "" : "line-clamp-2"}`}
                     >
                         {video.description}
                     </p>
